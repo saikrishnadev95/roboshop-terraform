@@ -149,7 +149,7 @@ resource "aws_instance" "rabbitmq" {
   }
 }
 
-resource "aws_route53_record" "rabbitmt" {
+resource "aws_route53_record" "rabbitmq" {
   zone_id = "Z07043833GN76DBYXNYXF"
   name    = "rabbitmq.saikrishna.cloud"
   type    = "A"
@@ -168,8 +168,8 @@ resource "aws_instance" "payment" {
 
 resource "aws_route53_record" "payment" {
   zone_id = "Z07043833GN76DBYXNYXF"
-  name    = "frontend.saikrishna.cloud"
+  name    = "payment.saikrishna.cloud"
   type    = "A"
   ttl     = 30
-  records = [aws_instance.mongodb.private_ip]
+  records = [aws_instance.payment.private_ip]
 }
