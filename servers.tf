@@ -17,7 +17,7 @@ resource "aws_route53_record" "frontend" {
   zone_id = "Z07043833GN76DBYXNYXF"
   name    = "frontend.saikrishna.cloud"
   type    = "A"
-  ttl     = 300
+  ttl     = 30
   records = [aws_instance.frontend.private_ip]
 }
 
@@ -34,7 +34,7 @@ resource "aws_route53_record" "mongodb" {
   zone_id = "Z07043833GN76DBYXNYXF"
   name    = "mongodb.saikrishna.cloud"
   type    = "A"
-  ttl     = 300
+  ttl     = 30
   records = [aws_instance.mongodb.private_ip]
 }
 
@@ -51,7 +51,7 @@ resource "aws_route53_record" "catalogue" {
   zone_id = "Z07043833GN76DBYXNYXF"
   name    = "catalogue.saikrishna.cloud"
   type    = "A"
-  ttl     = 300
+  ttl     = 30
   records = [aws_instance.catalogue.private_ip]
 }
 
@@ -68,7 +68,7 @@ resource "aws_route53_record" "user" {
   zone_id = "Z07043833GN76DBYXNYXF"
   name    = "user.saikrishna.cloud"
   type    = "A"
-  ttl     = 300
+  ttl     = 30
   records = [aws_instance.user.private_ip]
 }
 
@@ -85,7 +85,7 @@ resource "aws_route53_record" "redis" {
   zone_id = "Z07043833GN76DBYXNYXF"
   name    = "redis.saikrishna.cloud"
   type    = "A"
-  ttl     = 300
+  ttl     = 30
   records = [aws_instance.redis.private_ip]
 }
 
@@ -102,7 +102,7 @@ resource "aws_route53_record" "cart" {
   zone_id = "Z07043833GN76DBYXNYXF"
   name    = "cart.saikrishna.cloud"
   type    = "A"
-  ttl     = 300
+  ttl     = 30
   records = [aws_instance.cart.private_ip]
 }
 
@@ -119,7 +119,7 @@ resource "aws_route53_record" "mysql" {
   zone_id = "Z07043833GN76DBYXNYXF"
   name    = "mysql.saikrishna.cloud"
   type    = "A"
-  ttl     = 300
+  ttl     = 30
   records = [aws_instance.mysql.private_ip]
 }
 
@@ -136,7 +136,7 @@ resource "aws_route53_record" "shipping" {
   zone_id = "Z07043833GN76DBYXNYXF"
   name    = "shipping.saikrishna.cloud"
   type    = "A"
-  ttl     = 300
+  ttl     = 30
   records = [aws_instance.shipping.private_ip]
 }
 
@@ -153,7 +153,7 @@ resource "aws_route53_record" "rabbitmt" {
   zone_id = "Z07043833GN76DBYXNYXF"
   name    = "rabbitmq.saikrishna.cloud"
   type    = "A"
-  ttl     = 300
+  ttl     = 30
   records = [aws_instance.rabbitmq.private_ip]
 }
 
@@ -170,6 +170,6 @@ resource "aws_route53_record" "payment" {
   zone_id = "Z07043833GN76DBYXNYXF"
   name    = "frontend.saikrishna.cloud"
   type    = "A"
-  ttl     = 300
+  ttl     = 30
   records = [aws_instance.mongodb.private_ip]
 }
