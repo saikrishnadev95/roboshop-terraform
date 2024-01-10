@@ -14,7 +14,7 @@ resource "aws_instance" "frontend" {
 }
 
 resource "aws_route53_record" "frontend" {
-  zone_id = Z07043833GN76DBYXNYXF
+  zone_id = "Z07043833GN76DBYXNYXF"
   name    = "frontend.saikrishna.cloud"
   type    = "A"
   ttl     = 300
@@ -31,7 +31,7 @@ resource "aws_instance" "mongodb" {
 }
 
 resource "aws_route53_record" "mongodb" {
-  zone_id = Z07043833GN76DBYXNYXF
+  zone_id = "Z07043833GN76DBYXNYXF"
   name    = "mongodb.saikrishna.cloud"
   type    = "A"
   ttl     = 300
@@ -48,7 +48,7 @@ resource "aws_instance" "catalogue" {
 }
 
 resource "aws_route53_record" "catalogue" {
-  zone_id = Z07043833GN76DBYXNYXF
+  zone_id = "Z07043833GN76DBYXNYXF"
   name    = "catalogue.saikrishna.cloud"
   type    = "A"
   ttl     = 300
@@ -65,7 +65,7 @@ resource "aws_instance" "user" {
 }
 
 resource "aws_route53_record" "user" {
-  zone_id = Z07043833GN76DBYXNYXF
+  zone_id = "Z07043833GN76DBYXNYXF"
   name    = "user.saikrishna.cloud"
   type    = "A"
   ttl     = 300
@@ -82,7 +82,7 @@ resource "aws_instance" "redis" {
 }
 
 resource "aws_route53_record" "redis" {
-  zone_id = Z07043833GN76DBYXNYXF
+  zone_id = "Z07043833GN76DBYXNYXF"
   name    = "redis.saikrishna.cloud"
   type    = "A"
   ttl     = 300
@@ -99,7 +99,7 @@ resource "aws_instance" "cart" {
 }
 
 resource "aws_route53_record" "cart" {
-  zone_id = Z07043833GN76DBYXNYXF
+  zone_id = "Z07043833GN76DBYXNYXF"
   name    = "cart.saikrishna.cloud"
   type    = "A"
   ttl     = 300
@@ -116,7 +116,7 @@ resource "aws_instance" "mysql" {
 }
 
 resource "aws_route53_record" "mysql" {
-  zone_id = Z07043833GN76DBYXNYXF
+  zone_id = "Z07043833GN76DBYXNYXF"
   name    = "mysql.saikrishna.cloud"
   type    = "A"
   ttl     = 300
@@ -133,7 +133,7 @@ resource "aws_instance" "shipping" {
 }
 
 resource "aws_route53_record" "shipping" {
-  zone_id = Z07043833GN76DBYXNYXF
+  zone_id = "Z07043833GN76DBYXNYXF"
   name    = "shipping.saikrishna.cloud"
   type    = "A"
   ttl     = 300
@@ -150,7 +150,7 @@ resource "aws_instance" "rabbitmq" {
 }
 
 resource "aws_route53_record" "rabbitmt" {
-  zone_id = Z07043833GN76DBYXNYXF
+  zone_id = "Z07043833GN76DBYXNYXF"
   name    = "rabbitmq.saikrishna.cloud"
   type    = "A"
   ttl     = 300
@@ -167,7 +167,7 @@ resource "aws_instance" "payment" {
 }
 
 resource "aws_route53_record" "payment" {
-  zone_id = Z07043833GN76DBYXNYXF
+  zone_id = "Z07043833GN76DBYXNYXF"
   name    = "frontend.saikrishna.cloud"
   type    = "A"
   ttl     = 300
