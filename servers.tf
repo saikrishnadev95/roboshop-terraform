@@ -4,8 +4,10 @@ data "aws_ami" "centos" {
   name_regex       = "Centos-8-DevOps-Practice"
 }
 
+variable "security_group_id" {}
+
 data "aws_security_group" "allow-all" {
-  name = "allow-all"
+  id = var.security_group_id
 }
 
 variable "instance_type" {
