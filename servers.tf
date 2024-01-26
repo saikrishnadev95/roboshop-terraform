@@ -4,7 +4,9 @@ data "aws_ami" "centos" {
   name_regex       = "Centos-8-DevOps-Practice"
 }
 
-variable "security_group_id" {}
+variable "security_group_id" {
+  default = "sg-0cec4d14170438211"
+}
 
 data "aws_security_group" "allow-all" {
   id = var.security_group_id
