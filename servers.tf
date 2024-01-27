@@ -27,7 +27,7 @@ resource "aws_instance" "frontend" {
 }
 
 resource "aws_route53_record" "frontend" {
-  zone_id = "Z07043833GN76DBYXNYXF"
+  zone_id = "Z09242642PTLNKY5ZC2R7"
   name    = "frontend.saikrishna.cloud"
   type    = "A"
   ttl     = 30
@@ -44,7 +44,7 @@ resource "aws_instance" "mongodb" {
 }
 
 resource "aws_route53_record" "mongodb" {
-  zone_id = "Z07043833GN76DBYXNYXF"
+  zone_id = "Z09242642PTLNKY5ZC2R7"
   name    = "mongodb.saikrishna.cloud"
   type    = "A"
   ttl     = 30
@@ -61,7 +61,7 @@ resource "aws_instance" "catalogue" {
 }
 
 resource "aws_route53_record" "catalogue" {
-  zone_id = "Z07043833GN76DBYXNYXF"
+  zone_id = "Z09242642PTLNKY5ZC2R7"
   name    = "catalogue.saikrishna.cloud"
   type    = "A"
   ttl     = 30
@@ -78,7 +78,7 @@ resource "aws_instance" "user" {
 }
 
 resource "aws_route53_record" "user" {
-  zone_id = "Z07043833GN76DBYXNYXF"
+  zone_id = "Z09242642PTLNKY5ZC2R7"
   name    = "user.saikrishna.cloud"
   type    = "A"
   ttl     = 30
@@ -95,7 +95,7 @@ resource "aws_instance" "redis" {
 }
 
 resource "aws_route53_record" "redis" {
-  zone_id = "Z07043833GN76DBYXNYXF"
+  zone_id = "Z09242642PTLNKY5ZC2R7"
   name    = "redis.saikrishna.cloud"
   type    = "A"
   ttl     = 30
@@ -112,7 +112,7 @@ resource "aws_instance" "cart" {
 }
 
 resource "aws_route53_record" "cart" {
-  zone_id = "Z07043833GN76DBYXNYXF"
+  zone_id = "Z09242642PTLNKY5ZC2R7"
   name    = "cart.saikrishna.cloud"
   type    = "A"
   ttl     = 30
@@ -129,7 +129,7 @@ resource "aws_instance" "mysql" {
 }
 
 resource "aws_route53_record" "mysql" {
-  zone_id = "Z07043833GN76DBYXNYXF"
+  zone_id = "Z09242642PTLNKY5ZC2R7"
   name    = "mysql.saikrishna.cloud"
   type    = "A"
   ttl     = 30
@@ -146,7 +146,7 @@ resource "aws_instance" "shipping" {
 }
 
 resource "aws_route53_record" "shipping" {
-  zone_id = "Z07043833GN76DBYXNYXF"
+  zone_id = "Z09242642PTLNKY5ZC2R7"
   name    = "shipping.saikrishna.cloud"
   type    = "A"
   ttl     = 30
@@ -163,7 +163,7 @@ resource "aws_instance" "rabbitmq" {
 }
 
 resource "aws_route53_record" "rabbitmq" {
-  zone_id = "Z07043833GN76DBYXNYXF"
+  zone_id = "Z09242642PTLNKY5ZC2R7"
   name    = "rabbitmq.saikrishna.cloud"
   type    = "A"
   ttl     = 30
@@ -180,7 +180,7 @@ resource "aws_instance" "payment" {
 }
 
 resource "aws_route53_record" "payment" {
-  zone_id = "Z07043833GN76DBYXNYXF"
+  zone_id = "Z09242642PTLNKY5ZC2R7"
   name    = "payment.saikrishna.cloud"
   type    = "A"
   ttl     = 30
